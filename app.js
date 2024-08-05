@@ -156,6 +156,22 @@ boxs.addEventListener('mousemove', function(dets){
 })
 })
 
+let form = document.querySelector('.contact-form')
+
+document.querySelector('.contact-main button').addEventListener('click', function(){
+  // form.style.display = 'inline-block';
+  gsap.to(form, {
+    duration: 0.3,
+    visibility: "visible",
+    opacity: 1,
+  });
+  gsap.to('main', {
+    duration: .3,
+    opacity: 0.9,
+    filter: 'blur(5px)',
+  });
+})
+
 loco();
 magnet();
 abouth();
