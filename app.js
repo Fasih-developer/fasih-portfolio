@@ -128,34 +128,35 @@ function aboutp(){
         scrub:.5,
       },
       stagger:.2,
-      color:"#1C1D20",
+      color:"#1c1d20b7",
     })  
 };
-
-document.querySelectorAll('.box').forEach(function(boxs){
-  var rotate = 0;
-  var diffrot = 0;
-boxs.addEventListener('mouseleave', function(){
-      gsap.to(boxs.querySelector('img') , {
-          opacity:0,
-          ease: Power3,
-          duration: .5,
-      });
+function gallery(){
+  document.querySelectorAll('.box').forEach(function(boxs){
+    var rotate = 0;
+    var diffrot = 0;
+  boxs.addEventListener('mouseleave', function(){
+        gsap.to(boxs.querySelector('img') , {
+            opacity:0,
+            ease: Power3,
+            duration: .5,
+        });
+    })
+  boxs.addEventListener('mousemove', function(dets){
+    var diff = dets.clientY - boxs.getBoundingClientRect().top;
+    diffrot = dets.clientX - rotate;
+    rotate = dets.clientX;
+    gsap.to(boxs.querySelector('img') , {
+        opacity:1,
+        ease: Power3,
+        top :diff,
+        left :dets.clientX - 200,
+        rotate :gsap.utils.clamp(-20, 20, diffrot*0.08),
+    });
   })
-boxs.addEventListener('mousemove', function(dets){
-  var diff = dets.clientY - boxs.getBoundingClientRect().top;
-  diffrot = dets.clientX - rotate;
-  rotate = dets.clientX;
-  gsap.to(boxs.querySelector('img') , {
-      opacity:1,
-      ease: Power3,
-      top :diff,
-      left :dets.clientX - 200,
-      rotate :gsap.utils.clamp(-20, 20, diffrot*0.08),
-  });
-})
-})
-
+  })
+  
+}
 function forum(){
   let form = document.querySelector('.contact-form')
 
@@ -201,49 +202,55 @@ function forum(){
     });
   })
 }
+function loader(){
 
-setTimeout(() => {
-  document.querySelector('.loader h1').innerText = 'Hola.'
-  }, 700);
   setTimeout(() => {
-    document.querySelector('.loader h1').innerText = 'Bonjour.'
-  }, 800);
-  setTimeout(() => {
-    document.querySelector('.loader h1').innerText = 'Ciao.'
-  }, 900);
-  setTimeout(() => {
-    document.querySelector('.loader h1').innerText = 'こんにちは'
-  }, 1000);
-  setTimeout(() => {
-    document.querySelector('.loader h1').innerText = 'Hallo '
-  }, 1100);
-  setTimeout(() => {
-    document.querySelector('.loader h1').innerText = 'Habari.'
-  }, 1250);
-  setTimeout(() => {
-    document.querySelector('.loader h1').innerText = 'Bonjour '
-  }, 1400);
-  setTimeout(() => {
-    document.querySelector('.loader h1').innerText = 'こんにちは'
-  }, 1500);
-  setTimeout(() => {
-    document.querySelector('.loader h1').innerText = 'Hallo.'
-  }, 1600);
-  setTimeout(() => {
-    document.querySelector('.loader h1').innerText = 'Hello.'
-  }, 1700);
+    document.querySelector('.loader h1').innerText = 'Hola.'
+    }, 700);
+    setTimeout(() => {
+      document.querySelector('.loader h1').innerText = 'Bonjour.'
+    }, 800);
+    setTimeout(() => {
+      document.querySelector('.loader h1').innerText = 'Ciao.'
+    }, 900);
+    setTimeout(() => {
+      document.querySelector('.loader h1').innerText = 'こんにちは'
+    }, 1000);
+    setTimeout(() => {
+      document.querySelector('.loader h1').innerText = 'Hallo '
+    }, 1100);
+    setTimeout(() => {
+      document.querySelector('.loader h1').innerText = 'Habari.'
+    }, 1250);
+    setTimeout(() => {
+      document.querySelector('.loader h1').innerText = 'Bonjour '
+    }, 1400);
+    setTimeout(() => {
+      document.querySelector('.loader h1').innerText = 'こんにちは'
+    }, 1500);
+    setTimeout(() => {
+      document.querySelector('.loader h1').innerText = 'Hallo.'
+    }, 1600);
+    setTimeout(() => {
+      document.querySelector('.loader h1').innerText = 'Hello.'
+    }, 1700);
+ 
+    window.addEventListener('load',function(){
+      gsap.to('.loader',{
+        top:'-100%',
+        delay:1,
+        ease:'power3.inOut',
+        duration:1,
+      })
+    })
+}
 
 
-window.addEventListener('load',function(){
-  gsap.to('.loader',{
-    top:'-100%',
-    delay:1,
-    ease:'power3.inOut',
-    duration:1,
-  })
-})
+
 loco();
 magnet();
 abouth();
 aboutp();
+gallery();
 forum();
+loader();

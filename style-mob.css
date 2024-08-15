@@ -1,0 +1,175 @@
+header{
+    height: 10vh;
+}
+:root{
+    --back :#FFFFFE;
+    --color :#1C1D20;
+}
+nav i{
+    display: inline-block;
+    color: var(--color);
+    position: absolute;
+    right: 5%;
+    height: 10vw;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--back);
+    font-size: 4.5vw;
+}
+nav a{
+    font-size: 5.2vw;
+}
+.pages{
+    display: none;
+}
+.hero img{
+    margin-top: 52vw;
+    margin-left: 1vw;
+    height: 150%;
+}
+.sideglobe{
+    display: none;
+}
+.freelance{
+    width: 49vw;
+    height: 24vw;
+    top: 65%;
+    right: 0%;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+}
+.freelance i{
+    font-size: 3.5vw;
+}
+.freelance h2{
+    line-height: 6.5vw;
+    font-size: 6.4vw;
+    text-align: center;
+}
+/*---------------------------marque----------------------------------*/
+.marque{
+    height: 37vw;
+    top: 80%;
+}
+.mar{
+    animation: 14s scroll linear infinite ;
+}
+.marque h1{
+    font-size: 30vw;
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+.about{
+    height: 72vh;
+    flex-wrap: wrap;
+}
+.about-h{
+    width: 90%;
+    height: 30%;
+}
+.about-h p{
+    font-size: 6vw;
+    text-align: center;
+}
+.side-about{
+    margin-top: -20vw;
+    width: 90%;
+    height: 60%;
+}
+.side-about p{
+    padding-right: 0vw;
+    width: 90%;
+    font-size: 4.2vw;
+    text-align: center;
+}
+.side-about button{
+    width: 27vw;
+    height: 27vw;
+    font-size: 3.5vw;
+}
+.side-about button>span{
+    width: 32vw;
+    height: 32vw;
+    top: 180%;
+    left: 50%;
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+.portfolio{
+    padding-left: 10vw;
+}
+.portfolio h2{
+    font-size: 3vw;
+}
+.work{
+    padding-bottom: 20vw;
+    width: 100vw;
+}
+.work a{
+    width: 85%;
+    text-decoration: none;
+
+}
+.box{
+    width: 100%;
+    height: 25vw;
+}
+.box h1{
+    font-size: 6vw;
+}
+.box h5{
+    font-size: 1.8vw;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+.contact{
+    height: 50vh;
+}
+.contact-main{
+    height: 75%;
+    width: 90%;
+}
+.contact-main h1{
+    width: 95%;
+    font-size: 15vw;
+}
+.contact-main button{
+    background-color: #455CE9;
+    height: 20vw;
+    width: 20vw;
+    font-size: 2.7vw;
+    top: 62%;
+}
+.contact-main button>span{
+    width: 21vw;
+    height: 21vw;
+}   
+.contact-main i{
+    font-size: 3vw;
+}
+.footer{
+    bottom: 5%;
+    right: 3%;
+    width: 90%;
+}
+.footer p{
+    font-size: 2.5vw;
+}
+.socials{
+    width: 50vw;
+}
+.socials a{
+    font-size: 2.5vw;
+}
+.info{
+    width: 90%;
+    margin-top: -67%;
+}
+.info button{
+    width: 35vw;
+    height: 10vw;
+    border-radius: 10vw;
+    font-size: 2.5vw;
+}

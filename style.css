@@ -41,11 +41,13 @@ nav a{
     font-weight: 400;
     text-decoration: none;
 }
+nav i{
+    display: none;
+}
 .pages{
     width: 25%;
     display: flex;
     align-items: center;
-    /* background-color: red; */
     justify-content: space-evenly;
 }
 .pages a{
@@ -126,7 +128,6 @@ nav a{
     text-align: left;
     color: var(--back);
     font-size: 1.5vw;
-    /* background-color: red; */
     z-index: 9;
 }
 .freelance{
@@ -213,7 +214,6 @@ nav a{
 .side-about{
     width: 50%;
     height: 50%;
-    /* background-color: red; */
     padding-right: 6vw;
     padding-left: 6vw;
     display: flex;
@@ -436,7 +436,6 @@ nav a{
     opacity: 1;
 }
 .info{
-    /* background-color: red; */
     width: 80%;
     padding-left: 3vw;
     margin-top: -35%;
@@ -512,7 +511,6 @@ nav a{
 form{
     width: 90%;
     height: 80%;
-    /* background-color: rebeccapurple; */
     display: flex;
     justify-content: center;
     align-items: center;
