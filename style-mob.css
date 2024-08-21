@@ -22,8 +22,48 @@ nav i{
 nav a{
     font-size: 5.2vw;
 }
+/* --------------------------------------------------nav-screen--------------------------------------------------------- */
+.navigation{
+    width: 100vw;
+    height: 50vh;
+    background-color: var(--color);
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 24vw;
+    padding-bottom: 24vw;
+    top: -100%;
+    transition: all ease 0.5s;
+}
+.navigation p{
+    /* height: 15%; */
+    color: var(--back);
+    font-size: 7vw;
+    width: 100%;
+    text-align: center;
+}
+.navigation a{
+    display: inline-block;
+    width: 100vw;
+    font-size: 7vw;
+    color: var(--back);
+    text-align: center;
+}
+.navigation i{
+    position: absolute;
+    color: var(--back);
+    font-size: 8vw;
+    right: 2%;
+    top: 3%;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------- */
 .pages{
     display: none;
+}
+.hero{
+    height: 95vh;
 }
 .hero img{
     margin-top: 52vw;
@@ -172,4 +212,43 @@ nav a{
     height: 10vw;
     border-radius: 10vw;
     font-size: 2.5vw;
+}
+.contact-form{
+    width: 95vw;
+}
+.contact-form h1{
+    font-size: 7vw;
+}
+form{
+    width: 94%;
+    margin-top: -25vw;
+    height: 75%;
+}
+form>input{
+    height: 5%;
+    font-size: 3.5vw;
+}
+form>textarea{
+    font-size: 3.5vw;
+}
+form>button{
+    width: 36vw;
+    height: 10vw;
+    border-radius: 20vw;
+    font-size: 3.9vw;
+}
+.contact-form i{
+    font-size: 6vw;
+}
+.about-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color);
+    color: var(--back);
+    font-size: 5vw;
+    font-weight: 300;
+    letter-spacing: .1vw;
 }

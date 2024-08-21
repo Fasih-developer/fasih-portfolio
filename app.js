@@ -24,10 +24,15 @@ function loco(){
   });
   document.querySelector('#work-link').addEventListener('click', () =>{
     locoScroll.scrollTo('#work');
+    document.querySelector('.navigation').style.top = '-100%'
+
   })
   document.querySelector('#about-link').addEventListener('click', () =>{
     locoScroll.scrollTo('#about');
+    document.querySelector('.navigation').style.top = '-100%'
+
   })
+  
 }
 function magnet(){
 
@@ -201,6 +206,21 @@ function forum(){
       filter: 'blur(0px)',
     });
   })
+  document.querySelector('.navigation a').addEventListener('click', function(){
+    // form.style.display = 'inline-block';
+    gsap.to(form, {
+      duration: 0.3,
+      visibility: "visible",
+      opacity: 1,
+    });
+    gsap.to('main', {
+      duration: .3,
+      opacity: 0.7,
+      filter: 'blur(5px)',
+    });
+    document.querySelector('.navigation').style.top = '-100%'
+  })
+
 }
 function loader(){
 
@@ -244,8 +264,18 @@ function loader(){
       })
     })
 }
-
-
+function navigation1(){
+  let navdown = document.querySelector('nav i')
+  let navup = document.querySelector('.navigation i')
+  let navigation = document.querySelector('.navigation')
+  console.log(navdown)
+  navdown.addEventListener('click' , function(){
+    navigation.style.top = '0%';
+  })
+  navup.addEventListener('click' , function(){
+    navigation.style.top = '-100%';
+  })
+}
 
 loco();
 magnet();
@@ -254,3 +284,4 @@ aboutp();
 gallery();
 forum();
 loader();
+navigation1();
