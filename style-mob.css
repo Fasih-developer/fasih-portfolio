@@ -155,6 +155,7 @@ nav a{
 }
 .box{
     width: 100%;
+    padding-left: 2vw;
     height: 25vw;
 }
 .box h1{
