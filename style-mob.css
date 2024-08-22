@@ -147,6 +147,7 @@ nav a{
 .work{
     padding-bottom: 20vw;
     width: 100vw;
+    background-color: rebeccapurple;
 }
 .work a{
     width: 85%;

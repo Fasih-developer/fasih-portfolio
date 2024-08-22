@@ -152,6 +152,9 @@ nav i{
     font-weight: 400;
     text-transform: capitalize;
 }
+.navigation{
+    display: none;
+}
 /*---------------------------marque----------------------------------*/
 .marque{
     white-space: nowrap;
