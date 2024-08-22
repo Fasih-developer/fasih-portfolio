@@ -541,7 +541,7 @@ form>button{
     width: 9vw;
     height: 3vw;
     border: none;
-    border-radius: 2vw;
+    border-radius: 1vw;
     font-size: .9vw;
     color: var(--back);
     background-color:#455CE9;

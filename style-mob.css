@@ -221,6 +221,7 @@ nav a{
 }
 .contact-form{
     width: 95vw;
+    height: 85vh;
 }
 .contact-form h1{
     font-size: 7vw;
@@ -231,16 +232,18 @@ form{
     height: 75%;
 }
 form>input{
-    height: 5%;
+    height: 6%;
+    padding-left: 2vw;
     font-size: 3.5vw;
 }
 form>textarea{
+    padding-left: 2vw;
     font-size: 3.5vw;
 }
 form>button{
     width: 36vw;
     height: 10vw;
-    border-radius: 20vw;
+    border-radius: 2vw;
     font-size: 3.9vw;
 }
 .contact-form i{
