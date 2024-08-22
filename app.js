@@ -257,7 +257,7 @@ function loader(){
  
     window.addEventListener('load',function(){
       gsap.to('.loader',{
-        top:'-100%',
+        top:'-150%',
         delay:1,
         ease:'power3.inOut',
         duration:1,
