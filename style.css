@@ -568,5 +568,72 @@ form>button:hover{
     font-size: 5vw;
     color: var(--back);
 }
-
-
+/* ------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------- */
+.about-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 6vw;
+    background-color: var(--back);
+    position: relative;
+}
+.about-page-image{
+    width: 100vw;
+    height: 13vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-page-image img{
+    width: 14vw;
+    height: 110%;
+    border-radius: 2vw;
+    object-fit: cover;
+    object-position: calc(center - 100%);
+}
+.about-page-p{
+    width: 90%;
+    padding-left: 15%;
+    margin-top: -8vw;
+    padding-right: 15%;
+    /* background-color: red; */
+}
+.about-page-p p{
+    color: var(--color);
+    font-size: 1.1vw;
+    text-align: center;
+}
+.about-socials{
+    margin-top: -13vw;
+    width:13vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.about-socials a{
+    text-decoration: none;
+    background-color: var(--color);
+    height: 80%;
+    transition: .3s all ease;
+    width: 20%;
+    font-size: 1.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--back);
+    border-radius: .5vw;
+    background-color: var(--color);
+    transition: .3s all ease;
+    font-weight: 200;
+}
+.about-socials a:hover{
+    background-color: #455CE9;
+}
