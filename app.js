@@ -24,7 +24,7 @@ function loco(){
   });
   document.querySelector('#work-link').addEventListener('click', () =>{
     locoScroll.scrollTo('#work');
-    document.querySelector('.navigation').style.top = '-100%'
+    document.querySelector('.navigation').style.top = '-100%';
 
   })
   document.querySelector('#about-link').addEventListener('click', () =>{
@@ -32,7 +32,16 @@ function loco(){
     document.querySelector('.navigation').style.top = '-100%'
 
   })
-  
+  document.querySelector('#work-link1').addEventListener('click', () =>{
+    locoScroll.scrollTo('#work');
+    document.querySelector('.navigation').style.top = '-100%';
+
+  })
+  document.querySelector('#about-link1').addEventListener('click', () =>{
+    locoScroll.scrollTo('#about');
+    document.querySelector('.navigation').style.top = '-100%'
+
+  })
 }
 function magnet(){
 
@@ -268,7 +277,6 @@ function navigation1(){
   let navdown = document.querySelector('nav i')
   let navup = document.querySelector('.navigation i')
   let navigation = document.querySelector('.navigation')
-  console.log(navdown)
   navdown.addEventListener('click' , function(){
     navigation.style.top = '0%';
   })

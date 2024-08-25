@@ -96,6 +96,9 @@ nav i{
 .pages p:hover::before {
     opacity: 1;
 }
+.pages p>a::before{
+    display: none;
+}
 .hero{
     width: 100vw;
     height : 100vh;
@@ -473,18 +476,6 @@ nav i{
     transform: rotate(0deg);
     top: -50%;
 }
-.about-page{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color);
-    color: var(--back);
-    font-size: 2vw;
-    font-weight: 300;
-    letter-spacing: .1vw;
-}
 .contact-form{
     width: 40vw;
     height: 93vh;
@@ -577,3 +568,5 @@ form>button:hover{
     font-size: 5vw;
     color: var(--back);
 }
+
+
